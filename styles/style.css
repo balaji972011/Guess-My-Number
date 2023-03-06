@@ -10,29 +10,24 @@
 }
 
 :root {
-  --grey-bg: #887f81;
-  --drk-grey-bg: #3d3f41;
-  --grey-clr: rgba(136, 127, 129, 0.3);
-  --blck-clr: #17191d;
-  --silver-txt: #f2f2f7;
+  --maroon-bg: #280e2b;
+  --pink-clr: #f4506f;
   --white-txt: #fdfdfd;
-  --red-clr: rgba(255, 0, 0, 0.6);
-  --green-clr: rgba(0, 128, 0, 0.6);
-  --max-width: 1140px;
 }
 
 html {
-  font-size: 16px;
+  font-size: 20px;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Shantell Sans", cursive;
-  background: linear-gradient(
-    135deg,
-    var(--grey-bg) 10%,
-    var(--drk-grey-bg) 80%
-  );
+  background-color: var(--maroon-bg);
+  color: var(--pink-clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 a {
@@ -46,4 +41,77 @@ li {
 img {
   width: 100%;
   height: auto;
+}
+/* background: linear-gradient(135deg, var(--grey-bg) 10%, var(--drk-grey-bg) 80%); */
+.main-container {
+  text-align: center;
+  border: 3px solid var(--pink-clr);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+select {
+  border: 3px solid var(--pink-clr);
+  border-radius: 0.5rem;
+  background-color: var(--maroon-bg);
+  color: var(--pink-clr);
+}
+
+.display-guess {
+  width: 6rem;
+  height: 3rem;
+  background-color: var(--white-txt);
+  border: 3px solid var(--pink-clr);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 1px;
+  margin-top: 1rem;
+  margin-left: 4.6rem;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+input {
+  border: 2px solid var(--pink-clr);
+  border-radius: 0.5rem;
+  background-color: var(--maroon-bg);
+  color: var(--pink-clr);
+  cursor: pointer;
+  width: 6rem;
+  height: 3rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+input ::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 2px solid var(--pink-clr);
+  box-shadow: 0px 0px 6px 1px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0.5rem;
+  color: var(--pink-clr);
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: var(--maroon-bg);
+  box-shadow: none;
+}
+
+@media screen and (max-width: 325px) {
+  .display-guess {
+    margin-left: 3.7rem;
+  }
 }
