@@ -64,6 +64,7 @@ restartBtnEl.addEventListener(`click`, () => {
   userGuessEl.value = null;
   messageEl.innerText = `Start guessing....`;
   scoreEl.innerText = Number(rangeEl.value);
+  score = scoreEl.innerText;
 });
 
 init();
