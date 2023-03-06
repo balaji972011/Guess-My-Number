@@ -1,0 +1,49 @@
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --grey-bg: #887f81;
+  --drk-grey-bg: #3d3f41;
+  --grey-clr: rgba(136, 127, 129, 0.3);
+  --blck-clr: #17191d;
+  --silver-txt: #f2f2f7;
+  --white-txt: #fdfdfd;
+  --red-clr: rgba(255, 0, 0, 0.6);
+  --green-clr: rgba(0, 128, 0, 0.6);
+  --max-width: 1140px;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Shantell Sans", cursive;
+  background: linear-gradient(
+    135deg,
+    var(--grey-bg) 10%,
+    var(--drk-grey-bg) 80%
+  );
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
