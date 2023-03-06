@@ -22,28 +22,32 @@
   </head>
   <body>
     <div class="main-container">
-      <div class="section-one">
+      <div class="section-one" id="section-one">
         <h2>Guess my number😎</h2>
         <div class="range-select">
           <label for="range">Select range</label>
           <select name="range" id="range">
-            <option value="10">Easy (1 to 10)</option>
-            <option value="50">Medium (1 to 50)</option>
-            <option value="100">Hard (1 to 100)</option>
+            <option value="5">Easy (1 to 10)</option>
+            <option value="5">Medium (1 to 15)</option>
+            <option value="5">Hard (1 to 20)</option>
           </select>
         </div>
       </div>
-      <div class="section-two">
+      <div class="section-two" id="section-two">
         <div class="display-guess" id="display-guess">?</div>
-        <input type="number" class="user-guess" placeholder="guess" />
+      </div>
+      <div class="section-three" id="section-three">
+        <input type="number" id="user-guess" placeholder="guess" />
         <p><button class="btn" id="check">Check !</button></p>
       </div>
-      <div class="section-three">
+      <div class="section-four">
         <p class="message" id="message">Start guessing....</p>
         <p class="score">🎯 Score: <span id="score">10</span></p>
-        <p class="hints">👍 Hints remaining: <span id="hints">10</span></p>
+        <p class="high-score">
+          🌟 High Score: <span type="number" id="high-score">10</span>
+        </p>
         <button class="btn" id="restart">
-          <i class="fa-solid fa-rotate-right"></i> Restart
+          <i class="fa-solid fa-rotate-right"></i> Play Again
         </button>
       </div>
     </div>
