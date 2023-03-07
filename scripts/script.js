@@ -10,7 +10,7 @@ const restartBtnEl = document.getElementById(`restart`);
 const sectionOneEl = document.getElementById(`section-one`);
 const sectionThreeEl = document.getElementById(`section-three`);
 
-let score = Number(rangeEl.value);
+let score = 5;
 let highScore = 0;
 let randomNumber = Math.trunc(Math.random() * Number(rangeEl.value)) + 1;
 
@@ -20,7 +20,8 @@ const init = function () {
 };
 
 rangeEl.addEventListener(`change`, () => {
-  score = Number(rangeEl.value);
+  randomNumber = Math.trunc(Math.random() * Number(rangeEl.value)) + 1;
+  score = 5;
   init();
 });
 
@@ -63,7 +64,7 @@ restartBtnEl.addEventListener(`click`, () => {
   randomGuessEl.innerText = `?`;
   userGuessEl.value = null;
   messageEl.innerText = `Start guessing....`;
-  scoreEl.innerText = Number(rangeEl.value);
+  scoreEl.innerText = 5;
   score = scoreEl.innerText;
 });
 
